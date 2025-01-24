@@ -5,7 +5,7 @@
 
 <div class="container mt-4">
     <div class="row">
-        <!-- Student List Table -->
+        
         <div class="col-md-12">
             <h3 class="text-center mb-3">Student List</h3>
             <table class="table table-hover table-bordered">
@@ -44,7 +44,7 @@
     </div>
 
     <div class="row mt-5">
-        <!-- Add/Update Student Form -->
+        
         <div class="col-md-8 mx-auto">
             <h4 class="text-center">Add or Update Student</h4>
             <form>
@@ -123,7 +123,7 @@
         Message = studentPage.SaveInformation(_fileBytes, Student);
 
         Student = new Student();
-        imgSrc = "";
+        //imgSrc = "";
         GetStudents();
     }
 
@@ -131,7 +131,7 @@
     {
         StudentPage studentPage = new StudentPage(studentService);
         Student = studentPage.GetStudent(studentId);
-        imgSrc = Student.ImageUrl;
+       // imgSrc = Student.ImageUrl;
         Message = "";
     }
 }

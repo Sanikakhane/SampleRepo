@@ -21,7 +21,7 @@ namespace BlazorApp3.PageClass
         {
             var student = _studentService.GetStudent(studentId);
             student.Photo = this.GetImage(Convert.ToBase64String(student.Photo));
-            student.ImageUrl = string.Format("data:image/jpg;base64,{0}", Convert.ToBase64String(student.Photo));
+           // student.ImageUrl = string.Format("data:image/jpg;base64,{0}", Convert.ToBase64String(student.Photo));
             return student;
         }
         public byte[] GetImage(string sBase64String)
